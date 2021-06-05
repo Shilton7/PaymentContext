@@ -32,6 +32,8 @@ namespace PaymentContext.Domain.Entities
                           "Subscription.Payments","A data do pagamento deve ser futura")
             );
             
+            // Só adiciona se for válido
+            if(Valid)
             _payments.Add(payment);
         }
 
